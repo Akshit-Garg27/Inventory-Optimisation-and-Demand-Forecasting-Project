@@ -7,6 +7,7 @@ This project focuses on analyzing and optimizing inventory management through da
 * **Demand Forecasting:**
     * **Seasonality Analysis:** Identified weekly and monthly sales trends. Notable sales peaks on Thursdays and Fridays and significant declines on Sundays. A sharp sales drop was observed in February, highlighting strong seasonality effects.
     * **Forecasting Model:** Utilized Autoregressive Moving Average (ARMA) for time-series forecasting. Achieved R-squared of 0.7 but observed high MAPE (59%) due to abrupt sales drops. Projected March sales quantity to be 254,853 units.
+    * **Incorporating Seasonality:** Used the Sarimax Model using Fourier Series and Deterministic proccess integrated the seasonality factor and Updated Model (with Seasonality): MAPE = 54.73%, R² = 0.884 .
 
 * **ABC Analysis:**
     * Categorized brands based on sales volume:
@@ -17,15 +18,15 @@ This project focuses on analyzing and optimizing inventory management through da
 
 * **EOQ and Reorder Point Analysis:**
     * **EOQ Insights:** Analyzed variability in optimal order quantities. Identified demand patterns and cost-saving opportunities using a log-scale distribution graph.
-    * **Reorder Point Analysis:** Calculated safety stock levels to prevent stockouts and overstocking. Observed majority of brands with reorder points between 0-99 units (primarily Category C).
+    * **Reorder Point Analysis:** Calculated safety stock levels to prevent stockouts and overstocking. Observed majority of brands with reorder points between 0-199 units (primarily Category C).
 
 * **Lead Time Analysis:**
     * Measured average lead times for inventory restocking: Majority experienced lead times exceeding one week.
     * Optimized ordering strategies to account for lead time variability.
 
 * **Inventory Value Optimization:**
-    * **Year-End Insights:** Total inventory value: $79M. EOQ-based model projected inventory value of $5M, saving approximately $74M.
-    * **Cost Savings:** Potential annual savings of $50k-$100k for top brands. Highlighted need for ongoing model refinements to prevent stockouts and minimize carrying costs.
+    * **Year-End Insights:** Total inventory value: $70M. EOQ-based model projected inventory value of $17M, saving approximately $53M.
+    * **Cost Savings:** Potential annual savings of $250k-$500k for top brands. Highlighted need for ongoing model refinements to prevent stockouts and minimize carrying costs.
 
 * **Inventory Turnover Analysis:**
     * Turnover ratio: 4.2
